@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    color: white;
+    background-color: black;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 80px;
+}
+
+#porsche-nav {
+    margin-right: 870px;
+}
+
+#btn-nav {
+    height: 50px;
+    width: 100px;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+#btn-nav:hover {
+    scale: 1.2;
+    transition: ease-in-out 1s;
+}
