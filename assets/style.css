@@ -6,14 +6,30 @@
 nav {
     color: white;
     background-color: black;
-    height: 70px;
+    height: 100px;
     display: flex;
-    align-items: center; /* centra verticalmente */
-    justify-content: space-between; /* spazio tra logo e menu */
+    align-items: center; 
+    justify-content: space-evenly; 
+}
+
+.nav-links {
+    text-decoration: none;
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.nav-links:hover {
+    color: red;
+    scale: 1.1;
+    text-decoration: underline;
+    transition: ease-in-out 0.5s;
 }
 
 #porsche-nav {
     margin-right: 870px;
+    text-decoration: none;
+    color: white;
 }
 
 #btn-nav {
@@ -22,10 +38,9 @@ nav {
     background-color: red;
     color: white;
     border-radius: 10px;
-    font-weight: bold;
 }
 
 #btn-nav:hover {
-    scale: 1.2;
+    scale: 1.1;
     transition: ease-in-out 1s;
 }
