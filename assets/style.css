@@ -10,6 +10,7 @@ nav {
     display: flex;
     align-items: center; 
     justify-content: space-evenly; 
+    font-size: 20px;
 }
 
 .nav-links {
@@ -17,12 +18,11 @@ nav {
     color: white;
     padding-left: 30px;
     padding-right: 30px;
+    font-size: 14px;
 }
 
 .nav-links:hover {
     color: red;
-    scale: 1.1;
-    text-decoration: underline;
     transition: ease-in-out 0.5s;
 }
 
@@ -30,6 +30,11 @@ nav {
     margin-right: 870px;
     text-decoration: none;
     color: white;
+}
+
+#porsche-nav:hover {
+    color: red;
+    transition: ease-in-out 0.5s;
 }
 
 #btn-nav {
@@ -41,6 +46,7 @@ nav {
 }
 
 #btn-nav:hover {
-    scale: 1.1;
+    -webkit-box-shadow: 11px 5px 15px 0px #FF0000; 
+    box-shadow: 11px 5px 15px 0px #FF0000;
     transition: ease-in-out 1s;
 }
