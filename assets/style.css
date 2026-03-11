@@ -50,3 +50,19 @@ nav {
     box-shadow: 11px 5px 15px 0px #FF0000;
     transition: ease-in-out 1s;
 }
+
+main{
+    background: linear-gradient(135deg, #0A0A0A 0%, #1a0505 60%, #0A0A0A 100%);
+  
+}
+.porsche-configurator{
+    color: #FF0000;
+}
+
+.progetta{
+    color: white;
+}
+
+.porsche{
+    color: #FF0000;
+}
