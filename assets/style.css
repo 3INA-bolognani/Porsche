@@ -28,10 +28,6 @@ nav {
     transition: ease-in-out 0.5s;
 }
 
-.nav-links:active {
-    scale: 0.70;
-}
-
 #porsche-nav {
     margin-right: 870px;
     text-decoration: none;
@@ -43,6 +39,20 @@ nav {
     transition: ease-in-out 0.5s;
 }
 
+#btn-nav {
+    height: 50px;
+    width: 100px;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+}
+
+#btn-nav:hover {
+    -webkit-box-shadow: 11px 5px 15px 0px #FF0000; 
+    box-shadow: 11px 5px 15px 0px #FF0000;
+    transition: ease-in-out 1s;
+}
+
 main{
     background: linear-gradient(135deg, #0A0A0A 0%, #1a0505 60%, #0A0A0A 100%);
     height: 890px;
@@ -50,38 +60,27 @@ main{
 }
 .porsche-configurator{
     color: #FF0000;
+    font-size: 70px;
 }
 
 .progetta{
     color: white;
+    font-size: 70px;
 }
 
 .porsche{
     color: #FF0000;
+    font-size: 70px;
 }
 
-#btn-nav {
-    background-color: #1a1a1a;
-    color: #ffffff;
-    padding: 12px 30px;
-    border: 2px solid #e74c3c; 
-    border-radius: 6px;
-    font-size: 16px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    cursor: pointer;
-    transition: all 0.4s ease;
-  }
-
-#btn-nav:hover {
-    background-color: #ff1900; 
-    color: #ffffff;
-    border-color: #c0392b;     
-    box-shadow: 0 0 20px rgba(231, 76, 60, 0.4); 
-    transform: scale(1.05);    
-  }
-
-#btn-nav:active {
-    transform: scale(0.98);    
-  }
+.left-homePage{
+    text-align: center;
+    padding-top: 300px;
+    height: 500px;
+}
+.scritte-index{
+    color: gray;
+    font-size: 15px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
