@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Raleway', sans-serif;
@@ -9,10 +9,10 @@ nav {
     background-color: black;
     height: 60px;
     display: flex;
-    align-items: center; 
-    justify-content: space-evenly; 
+    align-items: center;
+    justify-content: space-evenly;
     font-size: 20px;
-    
+
 }
 
 .nav-links {
@@ -43,43 +43,45 @@ nav {
     transition: ease-in-out 0.5s;
 }
 
-main{
+main {
     background: linear-gradient(135deg, #0A0A0A 0%, #1a0505 60%, #0A0A0A 100%);
     height: 890px;
-  
+
 }
-.porsche-configurator{
+
+.porsche-configurator {
     color: #FF0000;
     font-size: 70px;
 }
 
-.progetta{
+.progetta {
     color: white;
     font-size: 70px;
 }
 
-.porsche{
+.porsche {
     color: #FF0000;
     font-size: 70px;
 }
 
-.left-homePage{
+.left-homePage {
     text-align: center;
     padding-top: 300px;
     height: 500px;
 }
-.scritte-index{
+
+.scritte-index {
     color: gray;
     font-size: 15px;
     margin-top: 30px;
     margin-bottom: 50px;
 }
 
-#btn-nav {
+.btn-nav {
     background-color: #000000;
     color: #ffffff;
     padding: 12px 30px;
-    border: 2px solid #ff1900; 
+    border: 2px solid #ff1900;
     border-radius: 6px;
     font-size: 16px;
     font-weight: bold;
@@ -87,16 +89,43 @@ main{
     letter-spacing: 1px;
     cursor: pointer;
     transition: all 0.4s ease;
-  }
+}
 
-#btn-nav:hover {
-    background-color: #ff1900; 
+.btn-nav:hover {
+    background-color: #ff1900;
     color: #ffffff;
-    border-color: #ff1900;     
-    box-shadow: 0 0 20px rgba(231, 76, 60, 0.4); 
-    transform: scale(1.05);    
-  }
+    border-color: #ff1900;
+    box-shadow: 0 0 20px rgba(231, 76, 60, 0.4);
+    transform: scale(1.05);
+}
 
-#btn-nav:active {
-    transform: scale(0.98);    
-  }
+.btn-nav:active {
+    transform: scale(0.98);
+}
+
+.btn-homepage {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 12px 30px;
+    border: 2px solid #ff1900;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    margin: 30px;
+}
+
+.btn-homepage:hover {
+    background-color: #ff1900;
+    color: #ffffff;
+    border-color: #ff1900;
+    box-shadow: 0 0 20px rgba(231, 76, 60, 0.4);
+    transform: scale(1.05);
+}
+
+.btn-homepage:active {
+    transform: scale(0.98);
+}
