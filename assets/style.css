@@ -27,6 +27,10 @@ nav {
     transition: ease-in-out 0.5s;
 }
 
+.nav-links:active {
+    scale: 0.70;
+}
+
 #porsche-nav {
     margin-right: 870px;
     text-decoration: none;
@@ -36,20 +40,6 @@ nav {
 #porsche-nav:hover {
     color: red;
     transition: ease-in-out 0.5s;
-}
-
-#btn-nav {
-    height: 50px;
-    width: 100px;
-    background-color: red;
-    color: white;
-    border-radius: 10px;
-}
-
-#btn-nav:hover {
-    -webkit-box-shadow: 11px 5px 15px 0px #FF0000; 
-    box-shadow: 11px 5px 15px 0px #FF0000;
-    transition: ease-in-out 1s;
 }
 
 main{
@@ -68,3 +58,29 @@ main{
 .porsche{
     color: #FF0000;
 }
+
+#btn-nav {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 12px 30px;
+    border: 2px solid #ff1900; 
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+  }
+
+#btn-nav:hover {
+    background-color: #ff1900; 
+    color: #ffffff;
+    border-color: #c0392b;     
+    box-shadow: 0 0 20px rgba(231, 76, 60, 0.4); 
+    transform: scale(1.05);    
+  }
+
+#btn-nav:active {
+    transform: scale(0.98);    
+  }
