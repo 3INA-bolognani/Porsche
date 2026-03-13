@@ -1,3 +1,7 @@
+<?php 
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,13 +12,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav>
-        <a href="index.html" id="porsche-nav">P O R S C H E .</a>
-        <a href="" class="nav-links">CATALOGO</a>
-        <a href="" class="nav-links">STORIA</a>
-        <a href="" class="nav-links">LE MIE CONFIGURAZIONI</a>
-        <button class="btn-nav">ACCOUNT</button>
-    </nav>
+
+    <?php require_once "components/navbar.php" ?>
+
     <main>
         <div class="left-homePage">
             <h6 class="porsche-configurator">P O R S C H E | C O N F I G U R A T O R</h6>
@@ -24,8 +24,8 @@
                 dalla carrozzeria agli interni — e visualizza la 
                 tua creazione in tempo reale.
             </h5>
-            <button class="btn-homepage">SCEGLI IL MODELLO</button>
-            <button class="btn-homepage">STORIA PORSCHE</button>
+            <button class="btn-homepage" onclick="window.location.href='modello.php';">SCEGLI IL MODELLO</button>
+            <button class="btn-homepage" onclick="window.location.href='storia.php';">STORIA PORSCHE</button>
         </div>
     </main>
     

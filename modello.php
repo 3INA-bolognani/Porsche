@@ -7,28 +7,9 @@
     <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-    <nav>
-        <h2 id="porsche-nav">P O R S C H E .</h2>
-        <h3>CATALOGO</h3>
-        <h3>STORIA</h3>
-        <h3>LE MIE CONFIGURAZIONI</h3>
-        <button id="btn-nav">ACCOUNT</button>
-    </nav>
-    <main>
-        <div>
-            <h6>PORSCHE CONFIGURATOR - 2025/2026</h6>
-            <h1>Progetta la tua</h1>
-            <h1>Porsche.</h1>
-            <h5>Scegli il modello, personalizza ogni dettaglio — 
-                dalla carrozzeria agli interni — e visualizza la 
-                tua creazione in tempo reale.
-            </h5>
-            <div>
-                <button>SCEGLI IL MODELLO</button>
-                <button>STORIA PORSCHE</button>
-            </div>
-        </div>
-    </main>
+
+    <?php require_once "index.php" ?>
+
     <div>
         <h6>GAMMA COMPLETA</h6>
         <h1>Catalogo Modelli</h1>
