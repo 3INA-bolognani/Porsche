@@ -154,3 +154,43 @@ main {
     margin-bottom: 30px;
 }
 
+.storia{
+    background-color: rgba(0, 0, 0, 0.89);
+    padding: 40px;
+}
+
+.storia h1 {
+    color: red;
+}
+
+.storia h2 {
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.storia h4 {
+    color: #7a7a7a;
+    margin-bottom: 50px;
+}
+
+.storia hr {
+    background-color: red;
+    height: 1px;
+    margin-left: 80px;
+    margin-right: 100px;
+    margin-bottom: 40px;
+}
+
+footer {
+    height: 40px;
+    padding-top: 10px;
+    background-color: #000000;
+    color: red;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+
