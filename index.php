@@ -40,7 +40,6 @@ if($_SERVER["REQUEST_MODE" ] == "POST"){
             <button class="btn-homepage" onclick="window.location.href='modello.php';">SCEGLI IL MODELLO</button>
             <button class="btn-homepage" onclick="window.location.href='storia.php';">STORIA PORSCHE</button>
         </div>
-
         <div class="pop-up hidden">
             <h1>Login</h1>
             <h3>Effettuare L'Accesso</h3>
@@ -58,7 +57,6 @@ if($_SERVER["REQUEST_MODE" ] == "POST"){
             </form>
         </div>
     </main>
-
 </body>
 
 <script src="assets/script.js"></script>

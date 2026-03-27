@@ -2,8 +2,30 @@
     margin: 0;
     padding: 0;
     font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
 }
-
+ 
+:root{
+    --porsche-red: #D5001C;
+    --porsche-black: #0A0A0A;
+    --porsche-dark: #151515;
+    --porsche-mid: #1E1E1E;
+    --porsche-card: #1a1a1a;
+    --porsche-border: #2a2a2a;
+    --porsche-gold: #C8A96E;
+    --porsche-silver: #A8A8A8;
+    --porsche-white: #F5F5F5;
+    --porsche-light: #E0E0E0;
+}
+ 
+body{
+    background: var(--porsche-black);
+    color: var(--porsche-white);
+    font-family: 'Barlow', sans-serif;
+    font-weight: 300;
+    overflow-x: hidden;
+}
+ 
 nav {
     color: white;
     background-color: black;
@@ -12,9 +34,8 @@ nav {
     align-items: center;
     justify-content: space-evenly;
     font-size: 20px;
-
 }
-
+ 
 .nav-links {
     text-decoration: none;
     color: white;
@@ -22,60 +43,60 @@ nav {
     padding-right: 30px;
     font-size: 14px;
 }
-
+ 
 .nav-links:hover {
     color: red;
     transition: ease-in-out 0.5s;
 }
-
+ 
 .nav-links:active {
     scale: 0.70;
 }
-
+ 
 #porsche-nav {
     margin-right: 870px;
     text-decoration: none;
     color: white;
 }
-
+ 
 #porsche-nav:hover {
     color: red;
     transition: ease-in-out 0.5s;
 }
-
+ 
 main {
     background: linear-gradient(135deg, #0A0A0A 0%, #1a0505 60%, #0A0A0A 100%);
     height: 890px;
 }
-
+ 
 .porsche-configurator {
     color: #FF0000;
     font-size: 70px;
 }
-
+ 
 .progetta {
     color: white;
     font-size: 70px;
 }
-
+ 
 .porsche {
     color: #FF0000;
     font-size: 70px;
 }
-
+ 
 .left-homePage {
     text-align: center;
     padding-top: 300px;
     height: 500px;
 }
-
+ 
 .scritte-index {
     color: gray;
     font-size: 15px;
     margin-top: 30px;
     margin-bottom: 50px;
 }
-
+ 
 .btn-nav {
     background-color: #000000;
     color: #ffffff;
@@ -89,7 +110,7 @@ main {
     cursor: pointer;
     transition: all 0.4s ease;
 }
-
+ 
 .btn-nav:hover {
     background-color: #ff1900;
     color: #ffffff;
@@ -97,11 +118,11 @@ main {
     box-shadow: 0 0 20px rgba(231, 76, 60, 0.4);
     transform: scale(1.05);
 }
-
+ 
 .btn-nav:active {
     transform: scale(0.98);
 }
-
+ 
 .btn-homepage {
     background-color: #000000;
     color: #ffffff;
@@ -116,7 +137,7 @@ main {
     transition: all 0.4s ease;
     margin: 30px;
 }
-
+ 
 .btn-homepage:hover {
     background-color: #ff1900;
     color: #ffffff;
@@ -124,18 +145,19 @@ main {
     box-shadow: 0 0 20px rgba(231, 76, 60, 0.4);
     transform: scale(1.05);
 }
-
+ 
 .btn-homepage:active {
     transform: scale(0.98);
 }
-
+ 
 .gamma-completa{
     background: linear-gradient(135deg, #0A0A0A 0%, #1a0505 60%, #0A0A0A 100%);
     color: red;
     font-size: 12px;
     padding-left: 90px;
+    padding-top: 60px;
 }
-
+ 
 .catalogo-scritte{
     color: white;
     font-size: 70px;
@@ -143,16 +165,17 @@ main {
     padding-left: 80px;
     background: linear-gradient(135deg, #0A0A0A 0%, #1a0505 60%, #0A0A0A 100%);
 }
-
+ 
 .bottoni-modelli{
     padding-top: 40px;
     background: linear-gradient(135deg, #0A0A0A 0%, #1a0505 60%, #0A0A0A 100%);
+    padding-left: 80px;
 }
-
+ 
 .bottoni{
     margin-top: 30px;
     margin-bottom: 30px;
-    margin-left: 90px;
+    margin-left: 10px;
     background-color: #000000;
     color: #ffffff;
     padding: 12px 30px;
@@ -165,7 +188,7 @@ main {
     cursor: pointer;
     transition: all 0.4s ease;
 }
-
+ 
 .bottoni:hover {
     background-color: #ff1900;
     color: #ffffff;
@@ -173,132 +196,204 @@ main {
     box-shadow: 0 0 20px rgba(231, 76, 60, 0.4);
     transform: scale(1.05);
 }
-
+ 
 .bottoni:active {
     transform: scale(0.98);
 }
 
+.grid-macchine {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    gap: 24px;
+    padding: 48px 80px 80px;
+    background: linear-gradient(135deg, #0A0A0A 0%, #1a0505 60%, #0A0A0A 100%);
+}
 
-
-
-
-
-
-
-.div-macchine{
+.div-macchine {
     background: var(--porsche-card);
+    border: 1px solid var(--porsche-border);
     overflow: hidden;
     cursor: pointer;
     position: relative;
-    transition: transform 0.3s ease;
-    border: 1px solid transparent;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+ 
+.div-macchine:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(213, 0, 28, 0.15);
+    border-color: rgba(213, 0, 28, 0.4);
 }
 
-.div-macchine-img{
+.div-macchine-img {
     width: 100%;
-    aspect-ratio: 16 / 9;
-    overflow: hidden;
-    background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+    height: 180px;
+    background: #111111;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
+    overflow: hidden;
 }
-
-.div-macchine-scritta{
-    font-size: 80px;
-    opacity: 0.15;
-    font-family: 'Playfair Display', serif;
-    font-weight: 900;
-}
-
-.tipo-macchina{
+ 
+.div-macchine-img::after {
+    content: '';
     position: absolute;
-    top: 16px;
-    left: 16px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--porsche-red) 40%, transparent);
+}
+ 
+.div-macchine-scritta {
+    font-family: 'Playfair Display', serif;
+    font-size: 72px;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.06);
+    letter-spacing: -2px;
+    user-select: none;
+}
+ 
+.tipo-macchina {
+    position: absolute;
+    top: 14px;
+    left: 14px;
     background: var(--porsche-red);
-    font-family: 'Barlow Condensed', sans-serif;
-    font-size: 10px;
+    color: white;
+    font-size: 9px;
     font-weight: 700;
     letter-spacing: 2px;
     text-transform: uppercase;
     padding: 4px 10px;
-    color: white;
 }
-
-.info-macchine{
-    padding: 28px;
+ 
+.info-macchine {
+    padding: 20px 20px 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
-
-.modello-macchina{
-    font-family: 'Barlow Condensed', sans-serif;
-    font-size: 11px;
+ 
+.modello-macchina {
+    font-size: 9px;
     font-weight: 600;
-    letter-spacing: 3px;
+    letter-spacing: 2.5px;
     text-transform: uppercase;
     color: var(--porsche-red);
-    margin-bottom: 6px;
+    margin-bottom: 5px;
 }
-
-.nome-macchina{
+ 
+.nome-macchina {
     font-family: 'Playfair Display', serif;
-    font-size: 26px;
-    font-weight: 700;
-    margin-bottom: 20px;
-}
-
-.specifiche{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 12px;
-    margin-bottom: 24px;
-    padding-top: 20px;
-    border-top: 1px solid var(--porsche-border);
-}
-
-.valori-macchina{
-    font-family: 'Barlow Condensed', sans-serif;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 700;
     color: var(--porsche-white);
+    margin-bottom: 0;
+}
+.specifiche {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-top: 1px solid var(--porsche-border);
+    border-left: 1px solid var(--porsche-border);
+    margin-top: 18px;
+    gap: 0;
+    margin-bottom: 0;
+    padding-top: 0;
 }
 
-.spec-macchina{
-    font-size: 10px;
-    font-weight: 400;
-    letter-spacing: 1px;
+.specifiche > .specifiche {
+    display: flex;
+    flex-direction: column;
+    padding: 12px 10px;
+    border-right: 1px solid var(--porsche-border);
+    border-bottom: 1px solid var(--porsche-border);
+    border-top: none;
+    border-left: none;
+    margin: 0;
+    gap: 4px;
+}
+ 
+.valori-macchina {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--porsche-white);
+    line-height: 1;
+}
+ 
+.spec-macchina {
+    font-size: 8px;
+    font-weight: 500;
+    letter-spacing: 1.4px;
     text-transform: uppercase;
     color: var(--porsche-silver);
 }
-
-.grid-macchine{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
-    gap: 2px;
-    padding: 2px;
-    margin: 0 78px;
+.footer-carta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 20px 18px;
+    border-top: 1px solid var(--porsche-border);
+    background: transparent;
+    grid-column: 1 / -1;
 }
-    
-.storia{
+ 
+.prezzo-macchina {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--porsche-gold);
+    letter-spacing: -0.5px;
+}
+ 
+.iva {
+    font-size: 9px;
+    color: var(--porsche-silver);
+    margin-top: 3px;
+    letter-spacing: 0.5px;
+}
+ 
+.btn-macchina {
+    background: var(--porsche-red);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-family: 'Barlow', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+ 
+.btn-macchina:hover {
+    background: #b00018;
+    transform: scale(1.03);
+}
+ 
+.btn-macchina:active {
+    transform: scale(0.97);
+}
+
+.storia {
     background-color: rgba(0, 0, 0, 0.89);
     padding: 40px;
 }
-
-.storia h1 {
-    color: red;
-}
-
+ 
+.storia h1 { color: red; }
+ 
 .storia h2 {
     color: white;
     text-transform: uppercase;
     margin-bottom: 30px;
 }
-
+ 
 .storia h4 {
     color: #7a7a7a;
     margin-bottom: 50px;
 }
-
+ 
 .storia hr {
     background-color: red;
     height: 1px;
@@ -306,7 +401,7 @@ main {
     margin-right: 100px;
     margin-bottom: 40px;
 }
-
+ 
 footer {
     height: 40px;
     padding-top: 10px;
@@ -316,15 +411,11 @@ footer {
     font-size: 20px;
     font-weight: bold;
 }
-
-
-.hidden{
-    display: none;
-}
-
-.pop-up{
+ 
+.hidden { display: none; }
+ 
+.pop-up {
     width: 40vw;
     height: 40vh;
     border: 2px solid crimson;
-
 }
