@@ -1,60 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
-    <link rel="stylesheet" href="assets/style.css">
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homepage</title>
+  <link rel="stylesheet" href="assets/style.css">
 </head>
+
 <body>
-
-    <?php require_once "index.php" ?>
-
-    <div>
-        <h6>GAMMA COMPLETA</h6>
-        <h1>Catalogo Modelli</h1>
+  <?php require_once "components/navbar.php" ?>
+<main>
+    <div class="left-homePage">
+        <h6 class="porsche-configurator">P O R S C H E | C O N F I G U R A T O R</h6>
+        <h1 class="progetta">Progetta la tua</h1>
+        <h1 class="porsche">Porsche.</h1>
+        <h5 class="scritte-index">Scegli il modello, personalizza ogni dettaglio —
+            dalla carrozzeria agli interni — e visualizza la
+            tua creazione in tempo reale.
+        </h5>
+        <button class="btn-homepage" onclick="window.location.href='modello.php';">SCEGLI IL MODELLO</button>
+        <button class="btn-homepage" onclick="window.location.href='storia.php';">STORIA PORSCHE</button>
     </div>
-    <div>
-        <hr>
-        <button>TUTTI</button>
-        <button>BERLINA</button>
-        <button>SUV</button>
-        <button>SPORT</button>
-        <button>ELETTRICA</button>
-        <hr>
+    <div class="pop-up hidden">
     </div>
-    <div style="background-color: rgb(35,35,35); height: 560px;">
-        <div class="comandi-primo-div-pc">
-          <div class="primo-banner">
-            <div class="immagine1">
-              <img class="razer-desktop"
-                src="https://assets2.razerzone.com/images/pnx.assets/381e915d58d2b9759725c30a9f2c3a0f/desktops-and-components-category-500x500.webp">
-            </div>
-            <div class="testo-immagine-1" aria-level="2" role="heading">Desktop e componenti</div>
-            <p class="testo-lungo">Ideati per gli appassionati e progettati per le prestazioni</p>
-            <span class="stile-linkers-colore-verde">Saperne di più ></span>
+</main>
+  <div class="catalogo-modelli">
+    <h6 class="gamma-completa">G A M M A C O M P L E T A</h6>
+    <h1 class="catalogo-scritte">Catalogo Modelli</h1>
+  </div>
+  <div class="bottoni-modelli">
+    <hr>
+    <button class="bottoni">TUTTI</button>
+    <button class="bottoni">BERLINA</button>
+    <button class="bottoni">SUV</button>
+    <button class="bottoni">SPORT</button>
+    <button class="bottoni">ELETTRICA</button>
+    <hr>
+  </div>
+  <div class="grid-macchine">
+    <div class="div-macchine">
+      <div class="div-macchine-img">
+        <div class="div-macchine-scritta">Taycan</div>
+        <div class="tipo-macchina">ELETTRICA</div>
+      </div>
+      <div class="info-macchine">
+        <div class="modello-macchina">Taycan</div>
+        <div class="nome-macchina">Taycan Turbo</div>
+        <div class="specifiche">
+          <div class="specifiche">
+            <div class="valori-macchina">761</div>
+            <div class="spec-macchina">CV</div>
           </div>
-          <div class="primo-banner">
-            <div class="immagine1">
-              <img class="razer-desktop"
-                src="https://assets2.razerzone.com/images/pnx.assets/381e915d58d2b9759725c30a9f2c3a0f/razer-gamer-room-line-500x500.webp">
-            </div>
-            <div class="testo-immagine-1" aria-level="2" role="heading">Gamer room</div>
-            <p class="testo-lungo">Porta Razer Chroma RGB oltre il tuo PC con le nostre lampadine, strisce luminose e
-              lampade</p>
-            <span class="stile-linkers-colore-verde">Saperne di più ></span>
+          <div class="specifiche">
+            <div class="valori-macchina">0-100 km/h</div>
+            <div class="spec-macchina">0-100 km/h</div>
           </div>
-          <div class="primo-banner">
-            <div class="immagine1">
-              <img class="razer-desktop"
-                src="https://assets2.razerzone.com/images/pnx.assets/381e915d58d2b9759725c30a9f2c3a0f/accessories-category-500x500.jpg">
+          <div class="specifiche">
+            <div class="valori-macchina">560</div>
+            <div class="spec-macchina">kW</div>
+          </div>
+          <div class="specifiche">
+            <div class="valori-macchina">260</div>
+            <div class="spec-macchina">km/h Max</div>
+          </div>
+          <div class="specifiche">
+            <div class="valori-macchina">Elettrica</div>
+            <div class="spec-macchina">Alimentaz.</div>
+          </div>
+          <div class="specifiche">
+            <div class="valori-macchina">2024</div>
+            <div class="spec-macchina">Anno</div>
+          </div>
+          <div class="footer-carta">
+            <div>
+              <div class="prezzo-macchina">€189.800</div>
+              <div class="iva">IVA inclusa</div>
             </div>
-            <div class="testo-immagine-1" aria-level="2" role="heading">accessori</div>
-            <p class="testo-lungo">Per creare l'esperienza di gioco perfetta</p>
-            <span class="stile-linkers-colore-verde">Saperne di più ></span>
+            <button class="btn-macchina">Configura →</button>
           </div>
         </div>
       </div>
+    </div>
+  </div>
 </body>
 </html>
