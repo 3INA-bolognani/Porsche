@@ -1,4 +1,5 @@
 <?php
+require_once "components/session.php";
 
 ?>
 
@@ -30,6 +31,10 @@
             </h5>
             <button class="btn-homepage" onclick="window.location.href='modello.php';">SCEGLI IL MODELLO</button>
             <button class="btn-homepage" onclick="window.location.href='storia.php';">STORIA PORSCHE</button>
+        </div>
+
+        <div class="pop-up hidden">
+
         </div>
     </main>
 

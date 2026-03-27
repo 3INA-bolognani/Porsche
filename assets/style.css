@@ -193,4 +193,13 @@ footer {
 }
 
 
+.hidden{
+    display: none;
+}
 
+.pop-up{
+    width: 40vw;
+    height: 40vh;
+    border: 2px solid crimson;
+
+}
