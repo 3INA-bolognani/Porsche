@@ -2,9 +2,10 @@
 require_once "components/session.php";
 require_once "db/functions.php";
 
-if($_SERVER["REQUEST_MODE" ] == "POST"){
 
-}
+/* if($_SERVER[""] == "POST"){
+
+} */
 ?>
 
 <!DOCTYPE html>
@@ -24,11 +25,12 @@ if($_SERVER["REQUEST_MODE" ] == "POST"){
 
     <?php require_once "components/navbar.php" ?>
 
-    <?php if(session_status() === PHP_SESSION_ACTIVE): ?>
+    <!-- <?php if(session_status() === PHP_SESSION_ACTIVE): ?>
         <h1>Benvenuto, <?php $_SESSION["nome"] ?></h1>
-    <?php endif; ?>
+    <?php endif; ?> -->
 
     <main>
+
         <div class="left-homePage">
             <h6 class="porsche-configurator">P O R S C H E | C O N F I G U R A T O R</h6>
             <h1 class="progetta">Progetta la tua</h1>
@@ -40,22 +42,9 @@ if($_SERVER["REQUEST_MODE" ] == "POST"){
             <button class="btn-homepage" onclick="window.location.href='modello.php';">SCEGLI IL MODELLO</button>
             <button class="btn-homepage" onclick="window.location.href='storia.php';">STORIA PORSCHE</button>
         </div>
-        <div class="pop-up hidden">
-            <h1>Login</h1>
-            <h3>Effettuare L'Accesso</h3>
-            <form action="POST">
 
-            <label for="email">Email</label>
-            <input type="email" name="email" placeholder="Inserire l'Email..." required>
+        <?php require_once "components/login.php" ?>
 
-            <label for="password">Password</label>
-            <input type="password" name="password" placeholder="Inserire la Password" required>
-
-
-
-
-            </form>
-        </div>
     </main>
 </body>
 
