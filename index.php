@@ -1,16 +1,12 @@
 <?php
 require_once "components/session.php";
 require_once "db/functions.php";
+require_once "components/login.php" 
 
-
-/* if($_SERVER[""] == "POST"){
-
-} */
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,10 +20,11 @@ require_once "db/functions.php";
 <body>
 
     <?php require_once "components/navbar.php" ?>
+    
 
-    <!-- <?php if(session_status() === PHP_SESSION_ACTIVE): ?>
-        <h1>Benvenuto, <?php $_SESSION["nome"] ?></h1>
-    <?php endif; ?> -->
+    <?php if(session_status() === PHP_SESSION_ACTIVE): ?>
+        <h1>Benvenuto, <?php $_SESSION["user"] ?></h1>
+    <?php endif; ?>
 
     <main>
 
@@ -41,9 +38,7 @@ require_once "db/functions.php";
             </h5>
             <button class="btn-homepage" onclick="window.location.href='modello.php';">SCEGLI IL MODELLO</button>
             <button class="btn-homepage" onclick="window.location.href='storia.php';">STORIA PORSCHE</button>
-        </div>
-
-        <?php require_once "components/login.php" ?>
+        </div>     
 
     </main>
 </body>

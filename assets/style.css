@@ -4,8 +4,8 @@
     font-family: 'Raleway', sans-serif;
     box-sizing: border-box;
 }
- 
-:root{
+
+:root {
     --porsche-red: #D5001C;
     --porsche-black: #0A0A0A;
     --porsche-dark: #151515;
@@ -17,15 +17,15 @@
     --porsche-white: #F5F5F5;
     --porsche-light: #E0E0E0;
 }
- 
-body{
+
+body {
     background: var(--porsche-black);
     color: var(--porsche-white);
     font-family: 'Barlow', sans-serif;
     font-weight: 300;
     overflow-x: hidden;
 }
- 
+
 nav {
     color: white;
     background-color: black;
@@ -35,7 +35,7 @@ nav {
     justify-content: space-evenly;
     font-size: 20px;
 }
- 
+
 .nav-links {
     text-decoration: none;
     color: white;
@@ -43,60 +43,60 @@ nav {
     padding-right: 30px;
     font-size: 14px;
 }
- 
+
 .nav-links:hover {
     color: red;
     transition: ease-in-out 0.5s;
 }
- 
+
 .nav-links:active {
     scale: 0.70;
 }
- 
+
 #porsche-nav {
     margin-right: 870px;
     text-decoration: none;
     color: white;
 }
- 
+
 #porsche-nav:hover {
     color: red;
     transition: ease-in-out 0.5s;
 }
- 
+
 main {
     background: linear-gradient(135deg, #0A0A0A 0%, #1a0505 60%, #0A0A0A 100%);
     height: 890px;
 }
- 
+
 .porsche-configurator {
     color: #FF0000;
     font-size: 70px;
 }
- 
+
 .progetta {
     color: white;
     font-size: 70px;
 }
- 
+
 .porsche {
     color: #FF0000;
     font-size: 70px;
 }
- 
+
 .left-homePage {
     text-align: center;
     padding-top: 300px;
     height: 500px;
 }
- 
+
 .scritte-index {
     color: gray;
     font-size: 15px;
     margin-top: 30px;
     margin-bottom: 50px;
 }
- 
+
 .btn-nav {
     background-color: #000000;
     color: #ffffff;
@@ -110,7 +110,7 @@ main {
     cursor: pointer;
     transition: all 0.4s ease;
 }
- 
+
 .btn-nav:hover {
     background-color: #ff1900;
     color: #ffffff;
@@ -118,11 +118,11 @@ main {
     box-shadow: 0 0 20px rgba(231, 76, 60, 0.4);
     transform: scale(1.05);
 }
- 
+
 .btn-nav:active {
     transform: scale(0.98);
 }
- 
+
 .btn-homepage {
     background-color: #000000;
     color: #ffffff;
@@ -137,7 +137,7 @@ main {
     transition: all 0.4s ease;
     margin: 30px;
 }
- 
+
 .btn-homepage:hover {
     background-color: #ff1900;
     color: #ffffff;
@@ -145,34 +145,34 @@ main {
     box-shadow: 0 0 20px rgba(231, 76, 60, 0.4);
     transform: scale(1.05);
 }
- 
+
 .btn-homepage:active {
     transform: scale(0.98);
 }
- 
-.gamma-completa{
+
+.gamma-completa {
     background: linear-gradient(135deg, #0A0A0A 0%, #1a0505 60%, #0A0A0A 100%);
     color: red;
     font-size: 12px;
     padding-left: 90px;
     padding-top: 60px;
 }
- 
-.catalogo-scritte{
+
+.catalogo-scritte {
     color: white;
     font-size: 70px;
     padding-top: 10px;
     padding-left: 80px;
     background: linear-gradient(135deg, #0A0A0A 0%, #1a0505 60%, #0A0A0A 100%);
 }
- 
-.bottoni-modelli{
+
+.bottoni-modelli {
     padding-top: 40px;
     background: linear-gradient(135deg, #0A0A0A 0%, #1a0505 60%, #0A0A0A 100%);
     padding-left: 80px;
 }
- 
-.bottoni{
+
+.bottoni {
     margin-top: 30px;
     margin-bottom: 30px;
     margin-left: 10px;
@@ -188,7 +188,7 @@ main {
     cursor: pointer;
     transition: all 0.4s ease;
 }
- 
+
 .bottoni:hover {
     background-color: #ff1900;
     color: #ffffff;
@@ -196,7 +196,7 @@ main {
     box-shadow: 0 0 20px rgba(231, 76, 60, 0.4);
     transform: scale(1.05);
 }
- 
+
 .bottoni:active {
     transform: scale(0.98);
 }
@@ -219,7 +219,7 @@ main {
     display: flex;
     flex-direction: column;
 }
- 
+
 .div-macchine:hover {
     transform: translateY(-4px);
     box-shadow: 0 12px 40px rgba(213, 0, 28, 0.15);
@@ -236,7 +236,7 @@ main {
     position: relative;
     overflow: hidden;
 }
- 
+
 .div-macchine-img::after {
     content: '';
     position: absolute;
@@ -246,7 +246,7 @@ main {
     height: 1px;
     background: linear-gradient(90deg, transparent, var(--porsche-red) 40%, transparent);
 }
- 
+
 .div-macchine-scritta {
     font-family: 'Playfair Display', serif;
     font-size: 72px;
@@ -255,7 +255,7 @@ main {
     letter-spacing: -2px;
     user-select: none;
 }
- 
+
 .tipo-macchina {
     position: absolute;
     top: 14px;
@@ -268,14 +268,14 @@ main {
     text-transform: uppercase;
     padding: 4px 10px;
 }
- 
+
 .info-macchine {
     padding: 20px 20px 0;
     flex: 1;
     display: flex;
     flex-direction: column;
 }
- 
+
 .modello-macchina {
     font-size: 9px;
     font-weight: 600;
@@ -284,7 +284,7 @@ main {
     color: var(--porsche-red);
     margin-bottom: 5px;
 }
- 
+
 .nome-macchina {
     font-family: 'Playfair Display', serif;
     font-size: 22px;
@@ -292,6 +292,7 @@ main {
     color: var(--porsche-white);
     margin-bottom: 0;
 }
+
 .specifiche {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -303,7 +304,7 @@ main {
     padding-top: 0;
 }
 
-.specifiche > .specifiche {
+.specifiche>.specifiche {
     display: flex;
     flex-direction: column;
     padding: 12px 10px;
@@ -314,14 +315,14 @@ main {
     margin: 0;
     gap: 4px;
 }
- 
+
 .valori-macchina {
     font-size: 18px;
     font-weight: 600;
     color: var(--porsche-white);
     line-height: 1;
 }
- 
+
 .spec-macchina {
     font-size: 8px;
     font-weight: 500;
@@ -329,6 +330,7 @@ main {
     text-transform: uppercase;
     color: var(--porsche-silver);
 }
+
 .footer-carta {
     display: flex;
     align-items: center;
@@ -338,21 +340,21 @@ main {
     background: transparent;
     grid-column: 1 / -1;
 }
- 
+
 .prezzo-macchina {
     font-size: 20px;
     font-weight: 700;
     color: var(--porsche-gold);
     letter-spacing: -0.5px;
 }
- 
+
 .iva {
     font-size: 9px;
     color: var(--porsche-silver);
     margin-top: 3px;
     letter-spacing: 0.5px;
 }
- 
+
 .btn-macchina {
     background: var(--porsche-red);
     color: white;
@@ -366,12 +368,12 @@ main {
     cursor: pointer;
     transition: background 0.2s ease, transform 0.2s ease;
 }
- 
+
 .btn-macchina:hover {
     background: #b00018;
     transform: scale(1.03);
 }
- 
+
 .btn-macchina:active {
     transform: scale(0.97);
 }
@@ -380,20 +382,22 @@ main {
     background-color: rgba(0, 0, 0, 0.89);
     padding: 40px;
 }
- 
-.storia h1 { color: red; }
- 
+
+.storia h1 {
+    color: red;
+}
+
 .storia h2 {
     color: white;
     text-transform: uppercase;
     margin-bottom: 30px;
 }
- 
+
 .storia h4 {
     color: #7a7a7a;
     margin-bottom: 50px;
 }
- 
+
 .storia hr {
     background-color: red;
     height: 1px;
@@ -401,7 +405,7 @@ main {
     margin-right: 100px;
     margin-bottom: 40px;
 }
- 
+
 footer {
     height: 40px;
     padding-top: 10px;
@@ -411,7 +415,7 @@ footer {
     font-size: 20px;
     font-weight: bold;
 }
- 
+
 /* Overlay per scurire lo sfondo */
 .overlay {
     position: fixed;
@@ -419,7 +423,8 @@ footer {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.85); /* Sfondo semi-trasparente nero */
+    background: rgba(0, 0, 0, 0.85);
+    /* Sfondo semi-trasparente nero */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -428,12 +433,15 @@ footer {
 
 /* Il tuo Pop-up rifinito */
 .pop-up {
-    width: 350px; /* Meglio larghezza fissa o min-width per il login */
+    width: 350px;
+    /* Meglio larghezza fissa o min-width per il login */
     padding: 40px;
-    background-color: #1a1a1a; /* Nero opaco */
+    background-color: #1a1a1a;
+    /* Nero opaco */
     border: 2px solid crimson;
     border-radius: 8px;
-    box-shadow: 0 0 20px rgba(220, 20, 60, 0.3); /* Bagliore rosso soffuso */
+    box-shadow: 0 0 20px rgba(220, 20, 60, 0.3);
+    /* Bagliore rosso soffuso */
     text-align: center;
     color: white;
     font-family: sans-serif;
@@ -455,7 +463,7 @@ footer {
     border: 1px solid #333;
     color: white;
     border-radius: 4px;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 .pop-up input:focus {
@@ -476,7 +484,7 @@ footer {
 .btn-pop {
     background-color: #000000;
     color: #ffffff;
-    padding: 8px 20px; 
+    padding: 8px 20px;
     border: 2px solid #ff1900;
     border-radius: 4px;
     font-size: 13px;
@@ -499,4 +507,66 @@ footer {
 
 .btn-pop:active {
     transform: translateY(0) scale(0.96);
+}
+
+.form-reg {
+    background: #000; 
+    color: #fff;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid #ff0000; 
+    font-family: sans-serif;
+}
+
+.form-reg h1 {
+    color: #ff0000;
+    text-align: center;
+    margin-top: 0;
+}
+
+.form-reg label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.form-reg input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #444;
+    background: #222;
+    color: #fff;
+    box-sizing: border-box; 
+}
+
+.form-reg input:focus {
+    border-color: #ff0000;
+    outline: none;
+}
+
+.btn-homepage-reg {
+    display: block;    
+    margin: 20px auto; 
+    padding: 10px 30px;
+    background: transparent;
+    color: white;
+    border: 2px solid red;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.4s ease;
+}
+
+.btn-homepage-reg:hover {
+    background-color: #ff1900;
+    color: #ffffff;
+    border-color: #ff1900;
+    box-shadow: 0 0 20px rgba(231, 76, 60, 0.4);
+    transform: scale(1.05);
+}
+
+.btn-homepage-reg:active {
+    transform: scale(0.98);
 }
