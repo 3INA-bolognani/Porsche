@@ -23,7 +23,6 @@ require_once "components/login.php"
     
 
     <?php if(session_status() === PHP_SESSION_ACTIVE): ?>
-        <h1>Benvenuto, <?php $_SESSION["user"] ?></h1>
     <?php endif; ?>
 
     <main>

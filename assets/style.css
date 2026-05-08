@@ -203,10 +203,17 @@ main {
 
 .grid-macchine {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 24px;
+
     padding: 48px 80px 80px;
-    background: linear-gradient(135deg, #0A0A0A 0%, #1a0505 60%, #0A0A0A 100%);
+
+    background: linear-gradient(
+        135deg,
+        #0A0A0A 0%,
+        #1a0505 60%,
+        #0A0A0A 100%
+    );
 }
 
 .div-macchine {
@@ -218,6 +225,7 @@ main {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
+    min-height: 600px;
 }
 
 .div-macchine:hover {
@@ -226,7 +234,7 @@ main {
     border-color: rgba(213, 0, 28, 0.4);
 }
 
-.div-macchine-img {
+.div-macchine-img{
     width: 100%;
     height: 180px;
     background: #111111;
@@ -235,6 +243,116 @@ main {
     justify-content: center;
     position: relative;
     overflow: hidden;
+    height: 280px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(https://prs.porsche.com/iod/image/WW/Y1AFM1/1/N4Igxg9gdgZglgcxALlAQynAtmgLnaAZxQG0BdAGnDSwFMAnNFUOAExRFoA9cBaAGwgB3XjHrQ+-WjFwgqEAA74izEADc09OBlnIQrWoQDWuRSAC+5qrShq44qHSi6W7PQHk0hOMXlKCUMSollT8iAAW+FBIqCBsHAAiAIIAmnIgisqBzCEgCuKsAK5gLnFuICkAjEkAYgCylemZAUGgkLCIpCCVACoAzOkATD3pfUmNVAAsAOI16QCsABoAwukAbPMA0usAkgNUa5sAnOkA7GurVKdJ21RHAFoAoumPdfsg05WL6TsA6u8AKUe7wAMtMegkAEog9IARUqALhkJOVFhADV3rDfvN0mjEVQ0SDBiBKOAIIVnPQAJ4cX6-dJYCAGfgpWiaFCDAAMgzWlisIEItFwUQQrRAMAg9BwuhAACsFLQkFRcIxAgpNDZdDA0PxBZYgA?clientId=icc);
+}
+.div-macchine-img2 {
+    width: 100%;
+    height: 180px;
+    background: #111111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    height: 280px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(https://prs.porsche.com/iod/image/WW/992142/1/N4Igxg9gdgZglgcxALlAQynAtmgLnaAZxQG0BdAGnDSwFMAnNFUOAExRFoA9cBaAGwgB3XjHrQ+-WjFwgqEAA74izEADc09OBlnIQrWoQDWuRSAC+5qrShq44qHSi6W7PQHk0hOMXlKCUMSollT8iAAW+FBIqCBsHAAiAIIAmnIgisqBzCEgCuKsAK5gLnFuIACcFQBMAIwALNXpmQFBoJCwiKQgtQAqAMzp1b3p-QBCg1T9AFIV6QCsABxpVABsAJKTIADsSQDS6dsAEgDC6RUAWgCi6QDitQBi6esA6lvTV1sAMre9CQBKX3SAEV6sCQf85lRgQA1LYAZQAGukYV8mpRwBBCs56ABPDgvF7pLAQAz8FK0TQoaoABmqq0sVhAhFouCiCDaIBgEHoOF0IAAVgpaEgqLhGIEFJobLoYGh+CzLEA?clientId=icc);
+}
+.div-macchine-img3{
+    width: 100%;
+    height: 180px;
+    background: #111111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    height: 280px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(https://prs.porsche.com/iod/image/US/9YBCP1/1/N4Igxg9gdgZglgcxALlAQynAtmgLnaAZxQG0BdAGnDSwFMAnNFUOAExRFoA9cBaAGwgB3XjHrQ+-WjFwgqEAA74izEADc09OBlnIQrWoQDWuRSAC+5qrShq44qHSi6W7PQHk0hOMXlKCUMSollT8iAAW+FBIqCBsHAAiAIIAmnIgisqBzCEgCuKsAK5gLnFuIACcKQBCAMIACgCM6ZkBQaCQsIikIAAMAKLpjQDiAGzpAMwALOlTAOwASrMAYuNUUwCKG7MAqtXpAKwAGkfpowCSE2cA0hVnAHIAyulzRwcvKc1UAByPADLpCr1ObpZYAFSuVGGI3S5wAagAmWEAdUhID+wzBCQWAKoG0aCXSGwWdyocNqSLJyK+IAAWo1npRwBBCs56ABPDg7Z5ULAQAz8FK0TQoBG9BGjSxWECEWi4KIIdogGAQeg4XQgABWCloSCouEYgQUmhsuhgaH4sssQA?clientId=icc);
+}
+.div-macchine-img4 {
+    width: 100%;
+    height: 180px;
+    background: #111111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    height: 280px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(https://prs.porsche.com/iod/image/IT/XABDE1/1/N4Igxg9gdgZglgcxALlAQynAtmgLnaAZxQG0BdAGnDSwFMAnNFUOAExRFoA9cBaAGwgB3XjHrQ+-WjFwgqEAA74izEADc09OBlnIQrWoQDWuRSAC+5qrShq44qHSi6W7PQFV6AIwwBZNGAYciCKylDEqJZU-IgAFvhQSKggbBwAIgCCAJrBoQThzFEgCuKsAK5gLiluIAAaGQBCaQCiAIy5SvkRoJCwiKQgrQAqAEzBI0PBAMwZ7VQALO7NwQCs8wBKq7UAwsEAbACSK8EA7FkAHMEA4q0AWsEHAOpTD-dUAFLzJ8HvzS9UABkrkM0usAcEAaNggBFVrvGHrACcMIAav8QO5at9KOAIGVnPQAJ4cA6TKhYCAGfhZWiaFAjAAMIz2lisIEItFwCQQ3RAMAg9BwuhAACsFLQkFRcIxwgpNDZdDA0PwOZYgA?clientId=icc);
+}
+.div-macchine-img5 {
+    width: 100%;
+    height: 180px;
+    background: #111111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    height: 280px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(https://prs.porsche.com/iod/image/IT/YAAFH1/1/N4Igxg9gdgZglgcxALlAQynAtmgLnaAZxQG0BdAGnDSwFMAnNFUOAExRFoA9cBaAGwgB3XjHrQ+-WjFwgqEAA74izEADc09OBlnIQrWoQDWuRSAC+5qrShq44qHSi6W7PQHk0hOMXlKCUMSollT8iAAW+FBIqCBsHAAiAIIAmnIgisqBzCEgCuKsAK5gLnFuIClJSQBiABIAjOmZAUGgkLCIpCD1ACoATOl9PekALNUDVCMA4gDS6QCsABoAwukAbACSAMzrMwCc6QDsa6tUh0lzZzM7Z4vz6XsACgdUewBaAKLpy3sAUukfACyNxA1R6IKm9Sm6Q2AHUQb8PiCZkk1ukADJTHoJABK6PSAEUAAxoqgE+r-Mk4l4gAkANRBdPRExAdIAyiBKOAIIVnPQAJ4cDbDKhYCAGfgpWiaFB9Il9NaWKwgQi0XBRBCtEAwCD0HC6EAAKwUtCQVFwjECCk0Nl0MDQ-FVliAA?clientId=icc);
+}
+.div-macchine-img6 {
+    width: 100%;
+    height: 180px;
+    background: #111111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    height: 280px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(https://pictures.porsche.com/rtt/iris?COSY-EU-100-1711coMvsi60AAt5FwcmBEgA4qP8iBUDxPE3Cb9pNXkBuNYdMGF4tl3U0%25z8rMHIspbWvanYb%255y%25oq%25vSTmjMXD4qAZeoNBPUSfUx4RmHlCgI7MZyx7e2H7WQDcFGDLVYnfurDcp5yPew78zhRc2uaEqA7fQrp9OJtWFnQbNWMbdJvgzyko6c09ItDVW8uw);
+}
+.div-macchine-img7 {
+    width: 100%;
+    height: 180px;
+    background: #111111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    height: 280px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(https://images-porsche.imgix.net/-/media/28BEECBB1CDD47FB83984FF64512CB3E_D892AD70064E4990929F8B3371BD13BA_020-info-slider_16-9_3840x2160_CS14YBSOX0031_1?w=2500&ar=3840%3A2160&crop=focalpoint&q=45&auto=format);
+}
+.div-macchine-img8 {
+    width: 100%;
+    height: 180px;
+    background: #111111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    height: 280px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(https://images-porsche.imgix.net/-/media/6398D6C36AEC4D48B4513693F9544B65_8F3E67BC9B094F6A8D26039270D1C735_020-info-slider_16-9_CC24X03OX0003_3840x2160?w=1536&q=85&auto=format);
 }
 
 .div-macchine-img::after {
@@ -270,7 +388,7 @@ main {
 }
 
 .info-macchine {
-    padding: 20px 20px 0;
+    padding: 28px 20px 0;
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -295,40 +413,37 @@ main {
 
 .specifiche {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     border-top: 1px solid var(--porsche-border);
-    border-left: 1px solid var(--porsche-border);
-    margin-top: 18px;
-    gap: 0;
-    margin-bottom: 0;
-    padding-top: 0;
+    margin-top: 20px;
 }
 
-.specifiche>.specifiche {
+.specifica {
+    padding: 22px 10px;
+    min-height: 85px;
+
     display: flex;
     flex-direction: column;
-    padding: 12px 10px;
-    border-right: 1px solid var(--porsche-border);
+    justify-content: center;
+
     border-bottom: 1px solid var(--porsche-border);
-    border-top: none;
-    border-left: none;
-    margin: 0;
-    gap: 4px;
 }
 
 .valori-macchina {
-    font-size: 18px;
-    font-weight: 600;
-    color: var(--porsche-white);
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
     line-height: 1;
+    margin-bottom: 8px;
+    font-family: 'Playfair Display', serif;
 }
 
 .spec-macchina {
-    font-size: 8px;
-    font-weight: 500;
-    letter-spacing: 1.4px;
+    font-size: 13px;
     text-transform: uppercase;
-    color: var(--porsche-silver);
+    letter-spacing: 2px;
+    color: #8c8c8c;
+    font-weight: 300;
 }
 
 .footer-carta {
@@ -367,6 +482,7 @@ main {
     text-transform: uppercase;
     cursor: pointer;
     transition: background 0.2s ease, transform 0.2s ease;
+    text-decoration: none;
 }
 
 .btn-macchina:hover {
@@ -569,4 +685,275 @@ footer {
 
 .btn-homepage-reg:active {
     transform: scale(0.98);
+}
+
+
+
+
+
+
+
+
+/* CONFIGURATOR */
+#configurator { padding-top: 72px; }
+.config-layout {
+  display: grid; grid-template-columns: 1fr 380px;
+  min-height: calc(100vh - 72px);
+}
+.config-left { background: var(--porsche-dark); position: relative; }
+.config-3d-viewport {
+  width: 100%; height: 480px;
+  display: flex; align-items: center; justify-content: center;
+  position: relative;
+  background: radial-gradient(ellipse at center, #1a1a2e 0%, #0a0a0a 70%);
+  overflow: hidden;
+}
+.config-3d-viewport::before {
+  content: '';
+  position: absolute; bottom: 0; left: 10%; right: 10%; height: 60px;
+  background: radial-gradient(ellipse, rgba(213,0,28,0.3) 0%, transparent 70%);
+  filter: blur(20px);
+}
+.car-3d-display {
+  width: 100%; max-width: 600px;
+  transition: all 0.5s ease;
+  position: relative; z-index: 2;
+  filter: drop-shadow(0 20px 40px rgba(0,0,0,0.8));
+}
+.car-3d-display img { width: 100%; }
+.car-3d-placeholder {
+  font-family: 'Playfair Display', serif; font-size: 160px; font-weight: 900;
+  opacity: 0.04; user-select: none;
+}
+.rotate-hint {
+  position: absolute; bottom: 16px; left: 50%; transform: translateX(-50%);
+  font-family: 'Barlow Condensed', sans-serif; font-size: 11px; letter-spacing: 2px;
+  text-transform: uppercase; color: var(--porsche-silver); opacity: 0.5;
+  display: flex; align-items: center; gap: 6px;
+}
+.view-controls {
+  display: flex; gap: 2px; padding: 16px 32px;
+  border-bottom: 1px solid var(--porsche-border);
+}
+.view-btn {
+  flex: 1; padding: 10px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 11px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase;
+  background: transparent; border: 1px solid var(--porsche-border); color: var(--porsche-silver);
+  cursor: pointer; transition: all 0.2s; text-align: center;
+}
+.view-btn.active, .view-btn:hover { border-color: var(--porsche-red); color: white; background: rgba(213,0,28,0.1); }
+
+.config-sections { padding: 24px 32px; }
+.config-section-title {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 11px; font-weight: 600; letter-spacing: 3px; text-transform: uppercase;
+  color: var(--porsche-red); margin-bottom: 16px; margin-top: 28px;
+  padding-bottom: 8px; border-bottom: 1px solid var(--porsche-border);
+}
+.config-section-title:first-child { margin-top: 0; }
+
+.color-swatches { display: flex; flex-wrap: wrap; gap: 10px; }
+.color-swatch {
+  width: 48px; height: 48px; border-radius: 50%; cursor: pointer;
+  position: relative; border: 2px solid transparent;
+  transition: all 0.2s; flex-shrink: 0;
+}
+.color-swatch:hover { transform: scale(1.1); }
+.color-swatch.active { border-color: var(--porsche-red); }
+.color-swatch.active::after {
+  content: '✓'; position: absolute; inset: 0;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 16px; font-weight: 700; color: white;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.8);
+}
+.color-label {
+  font-size: 11px; color: var(--porsche-silver); text-align: center;
+  margin-top: 4px; max-width: 60px;
+}
+.color-item { display: flex; flex-direction: column; align-items: center; }
+
+.option-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.option-chip {
+  padding: 8px 16px; border: 1px solid var(--porsche-border);
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 12px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase;
+  color: var(--porsche-silver); cursor: pointer; background: transparent; transition: all 0.2s;
+}
+.option-chip:hover, .option-chip.active {
+  border-color: var(--porsche-red); color: white; background: rgba(213,0,28,0.1);
+}
+
+/* INTERIOR OPTIONS */
+.interior-options { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.interior-option {
+  padding: 14px; border: 1px solid var(--porsche-border);
+  cursor: pointer; transition: all 0.2s; background: rgba(255,255,255,0.02);
+}
+.interior-option:hover, .interior-option.active { border-color: var(--porsche-red); background: rgba(213,0,28,0.08); }
+.interior-option-name { font-size: 13px; font-weight: 500; margin-bottom: 2px; }
+.interior-option-price { font-family: 'Barlow Condensed', sans-serif; font-size: 11px; color: var(--porsche-gold); }
+
+/* RIGHT PANEL */
+.config-right {
+  background: var(--porsche-mid);
+  border-left: 1px solid var(--porsche-border);
+  display: flex; flex-direction: column;
+  position: sticky; top: 72px; height: calc(100vh - 72px);
+  overflow-y: auto;
+}
+.config-right::-webkit-scrollbar { width: 4px; }
+.config-right::-webkit-scrollbar-track { background: var(--porsche-dark); }
+.config-right::-webkit-scrollbar-thumb { background: var(--porsche-border); }
+.config-car-header { padding: 28px; border-bottom: 1px solid var(--porsche-border); }
+.config-car-model {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 11px; font-weight: 600; letter-spacing: 3px; text-transform: uppercase;
+  color: var(--porsche-red); margin-bottom: 4px;
+}
+.config-car-name {
+  font-family: 'Playfair Display', serif; font-size: 24px; font-weight: 700;
+}
+.config-specs-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+  border-top: 1px solid var(--porsche-border);
+}
+.config-spec-item {
+  padding: 20px 28px; border-bottom: 1px solid var(--porsche-border);
+  border-right: 1px solid var(--porsche-border);
+}
+.config-spec-item:nth-child(even) { border-right: none; }
+.config-spec-val {
+  font-family: 'Barlow Condensed', sans-serif; font-size: 28px; font-weight: 700; color: var(--porsche-white);
+}
+.config-spec-unit { font-size: 13px; font-weight: 400; color: var(--porsche-silver); }
+.config-spec-name { font-size: 11px; color: var(--porsche-silver); letter-spacing: 1px; text-transform: uppercase; margin-top: 2px; }
+
+.config-summary { padding: 28px; }
+.config-summary-row {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,0.05);
+  font-size: 13px;
+}
+.config-summary-row:last-child { border-bottom: none; }
+.config-summary-label { color: var(--porsche-silver); }
+.config-summary-val { font-weight: 500; }
+
+.config-total {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 20px 28px; border-top: 1px solid var(--porsche-border);
+  background: rgba(213,0,28,0.05);
+}
+.config-total-label {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 12px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: var(--porsche-silver);
+}
+.config-total-price {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 32px; font-weight: 700; color: var(--porsche-gold);
+}
+.config-actions { padding: 20px 28px; display: flex; flex-direction: column; gap: 10px; }
+.btn-save {
+  background: var(--porsche-red); color: white; border: none;
+  padding: 14px; width: 100%;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 12px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase;
+  cursor: pointer; transition: background 0.2s;
+}
+.btn-save:hover { background: #b0001a; }
+.btn-back-catalog {
+  background: transparent; color: var(--porsche-silver);
+  border: 1px solid var(--porsche-border);
+  padding: 14px; width: 100%;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 12px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase;
+  cursor: pointer; transition: all 0.2s;
+}
+.btn-back-catalog:hover { border-color: var(--porsche-silver); color: var(--porsche-white); }
+
+/* ACCOUNT MODAL */
+.modal-overlay {
+  position: fixed; inset: 0; z-index: 2000;
+  background: rgba(0,0,0,0.85); backdrop-filter: blur(8px);
+  display: none; align-items: center; justify-content: center;
+}
+.modal-overlay.open { display: flex; }
+.modal {
+  background: var(--porsche-dark); border: 1px solid var(--porsche-border);
+  padding: 48px; width: 420px; max-width: 90vw;
+  position: relative;
+  animation: fadeUp 0.3s ease both;
+}
+.modal-close {
+  position: absolute; top: 20px; right: 20px;
+  background: none; border: none; color: var(--porsche-silver);
+  font-size: 20px; cursor: pointer; padding: 4px;
+}
+.modal-title {
+  font-family: 'Playfair Display', serif; font-size: 28px; font-weight: 700; margin-bottom: 8px;
+}
+.modal-sub { font-size: 13px; color: var(--porsche-silver); margin-bottom: 32px; }
+.form-group { margin-bottom: 20px; }
+.form-label {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 11px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase;
+  color: var(--porsche-silver); display: block; margin-bottom: 8px;
+}
+.form-input {
+  width: 100%; background: var(--porsche-mid); border: 1px solid var(--porsche-border);
+  color: var(--porsche-white); padding: 12px 16px; font-size: 14px; font-family: 'Barlow', sans-serif;
+  outline: none; transition: border-color 0.2s;
+}
+.form-input:focus { border-color: var(--porsche-red); }
+.form-actions { margin-top: 28px; }
+
+.btn-primary {
+  background: var(--porsche-red); color: white;
+  padding: 16px 40px; border: none;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 13px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase;
+  cursor: pointer; transition: all 0.2s;
+}
+.btn-primary:hover { background: #b0001a; }
+
+.user-avatar {
+  width: 36px; height: 36px; background: var(--porsche-red);
+  border-radius: 50%; display: flex; align-items: center; justify-content: center;
+  font-family: 'Barlow Condensed', sans-serif; font-size: 14px; font-weight: 700;
+  margin-right: 10px;
+}
+.nav-user { display: flex; align-items: center; cursor: pointer; gap: 0; }
+
+.btn-small {
+  padding: 8px 16px;
+  font-family: 'Barlow Condensed', sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase;
+  cursor: pointer; border: none; transition: all 0.2s;
+}
+.btn-small-red { background: var(--porsche-red); color: white; }
+.btn-small-red:hover { background: #b0001a; }
+.btn-small-ghost { background: transparent; color: var(--porsche-silver); border: 1px solid var(--porsche-border); }
+.btn-small-ghost:hover { border-color: var(--porsche-red); color: var(--porsche-red); }
+
+/* TOAST */
+.toast {
+  position: fixed; bottom: 40px; right: 40px; z-index: 3000;
+  background: var(--porsche-red); color: white;
+  padding: 16px 28px;
+  font-family: 'Barlow Condensed', sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 1px;
+  transform: translateY(100px); opacity: 0;
+  transition: all 0.3s ease;
+}
+.toast.show { transform: translateY(0); opacity: 1; }
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  nav { padding: 0 20px; }
+  .nav-links { gap: 16px; }
+  .config-layout { grid-template-columns: 1fr; }
+  .config-right { position: static; height: auto; }
 }

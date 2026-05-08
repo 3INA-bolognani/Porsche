@@ -36,50 +36,321 @@ require_once "db/functions.php";
     <hr>
   </div>
   <div class="grid-macchine">
-    <div class="div-macchine">
-      <div class="div-macchine-img">
-        <div class="div-macchine-scritta">Taycan</div>
+
+  <div class="grid-macchine">
+
+<!--1-->
+<div class="div-macchine">
+    <div class="div-macchine-img">
         <div class="tipo-macchina">ELETTRICA</div>
-      </div>
-      <div class="info-macchine">
-        <div class="modello-macchina">Taycan</div>
-        <div class="nome-macchina">Taycan Turbo</div>
-        <div class="specifiche">
-          <div class="specifiche">
-            <div class="valori-macchina">761</div>
-            <div class="spec-macchina">CV</div>
-          </div>
-          <div class="specifiche">
-            <div class="valori-macchina">0-100 km/h</div>
-            <div class="spec-macchina">0-100 km/h</div>
-          </div>
-          <div class="specifiche">
-            <div class="valori-macchina">560</div>
-            <div class="spec-macchina">kW</div>
-          </div>
-          <div class="specifiche">
-            <div class="valori-macchina">260</div>
-            <div class="spec-macchina">km/h Max</div>
-          </div>
-          <div class="specifiche">
-            <div class="valori-macchina">Elettrica</div>
-            <div class="spec-macchina">Alimentaz.</div>
-          </div>
-          <div class="specifiche">
-            <div class="valori-macchina">2024</div>
-            <div class="spec-macchina">Anno</div>
-          </div>
-          <div class="footer-carta">
-            <div>
-              <div class="prezzo-macchina">€189.800</div>
-              <div class="iva">IVA inclusa</div>
-            </div>
-            <button class="btn-macchina">Configura →</button>
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
+
+    <div class="info-macchine">
+        <div class="modello-macchina">TAYCAN</div>
+        <div class="nome-macchina">Taycan Turbo</div>
+
+        <div class="specifiche">
+            <div class="specifica">
+                <div class="valori-macchina">761</div>
+                <div class="spec-macchina">CV</div>
+            </div>
+
+            <div class="specifica">
+                <div class="valori-macchina">2.8s</div>
+                <div class="spec-macchina">0-100 km/h</div>
+            </div>
+
+            <div class="specifica">
+                <div class="valori-macchina">560</div>
+                <div class="spec-macchina">kW</div>
+            </div>
+
+            <div class="specifica">
+                <div class="valori-macchina">260</div>
+                <div class="spec-macchina">km/h Max</div>
+            </div>
+
+            <div class="specifica">
+                <div class="valori-macchina">Elettrica</div>
+                <div class="spec-macchina">Alimentaz.</div>
+            </div>
+
+            <div class="specifica">
+                <div class="valori-macchina">2024</div>
+                <div class="spec-macchina">Anno</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-carta">
+        <div>
+            <div class="prezzo-macchina">€189.800</div>
+            <div class="iva">IVA inclusa</div>
+        </div>
+        <a href="macchine/taycan.php" class="btn-macchina">Configura →</a>
+    </div>
+</div>
+
+<!--2-->
+<div class="div-macchine">
+    <div class="div-macchine-img2">
+        <div class="tipo-macchina">SPORT</div>
+    </div>
+
+    <div class="info-macchine">
+        <div class="modello-macchina">911</div>
+        <div class="nome-macchina">911 Carrera GTS</div>
+
+        <div class="specifiche">
+            <div class="specifica">
+                <div class="valori-macchina">541</div>
+                <div class="spec-macchina">CV</div>
+            </div>
+
+            <div class="specifica">
+                <div class="valori-macchina">3.0s</div>
+                <div class="spec-macchina">0-100 km/h</div>
+            </div>
+
+            <div class="specifica">
+                <div class="valori-macchina">398</div>
+                <div class="spec-macchina">kW</div>
+            </div>
+
+            <div class="specifica">
+                <div class="valori-macchina">312</div>
+                <div class="spec-macchina">km/h Max</div>
+            </div>
+
+            <div class="specifica">
+                <div class="valori-macchina">Benzina</div>
+                <div class="spec-macchina">Alimentaz.</div>
+            </div>
+
+            <div class="specifica">
+                <div class="valori-macchina">2024</div>
+                <div class="spec-macchina">Anno</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-carta">
+        <div>
+            <div class="prezzo-macchina">€174.500</div>
+            <div class="iva">IVA inclusa</div>
+        </div>
+
+        <a href="macchine/carrera.php" class="btn-macchina">Configura →</a>
+    </div>
+</div>
+
+<!--3-->
+<div class="div-macchine">
+    <div class="div-macchine-img3">
+        <div class="tipo-macchina">SUV</div>
+    </div>
+
+    <div class="info-macchine">
+        <div class="modello-macchina">CAYENNE</div>
+        <div class="nome-macchina">Cayenne Turbo GT</div>
+
+        <div class="specifiche">
+            <div class="specifica">
+                <div class="valori-macchina">659</div>
+                <div class="spec-macchina">CV</div>
+            </div>
+
+            <div class="specifica">
+                <div class="valori-macchina">3.3s</div>
+                <div class="spec-macchina">0-100 km/h</div>
+            </div>
+
+            <div class="specifica">
+                <div class="valori-macchina">485</div>
+                <div class="spec-macchina">kW</div>
+            </div>
+
+            <div class="specifica">
+                <div class="valori-macchina">305</div>
+                <div class="spec-macchina">km/h Max</div>
+            </div>
+
+            <div class="specifica">
+                <div class="valori-macchina">Benzina</div>
+                <div class="spec-macchina">Alimentaz.</div>
+            </div>
+
+            <div class="specifica">
+                <div class="valori-macchina">2024</div>
+                <div class="spec-macchina">Anno</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-carta">
+        <div>
+            <div class="prezzo-macchina">€221.000</div>
+            <div class="iva">IVA inclusa</div>
+        </div>
+
+        <a href="macchine/cayenne.php" class="btn-macchina">Configura →</a>
+    </div>
+</div>
+
+<!--4-->
+<div class="div-macchine">
+    <div class="div-macchine-img4">
+        <div class="tipo-macchina">SUV</div>
+    </div>
+
+    <div class="info-macchine">
+        <div class="modello-macchina">MACAN</div>
+        <div class="nome-macchina">Macan GTS</div>
+
+        <div class="specifiche">
+            <div class="specifica"><div class="valori-macchina">440</div><div class="spec-macchina">CV</div></div>
+            <div class="specifica"><div class="valori-macchina">4.3s</div><div class="spec-macchina">0-100 km/h</div></div>
+            <div class="specifica"><div class="valori-macchina">324</div><div class="spec-macchina">kW</div></div>
+            <div class="specifica"><div class="valori-macchina">272</div><div class="spec-macchina">km/h Max</div></div>
+            <div class="specifica"><div class="valori-macchina">Benzina</div><div class="spec-macchina">Alimentaz.</div></div>
+            <div class="specifica"><div class="valori-macchina">2024</div><div class="spec-macchina">Anno</div></div>
+        </div>
+    </div>
+
+    <div class="footer-carta">
+        <div>
+            <div class="prezzo-macchina">€102.000</div>
+            <div class="iva">IVA inclusa</div>
+        </div>
+
+        <a href="macchine/macan.php" class="btn-macchina">Configura →</a>
+    </div>
+</div>
+
+<!--5-->
+<div class="div-macchine">
+    <div class="div-macchine-img5">
+        <div class="tipo-macchina">BERLINA</div>
+    </div>
+
+    <div class="info-macchine">
+        <div class="modello-macchina">PANAMERA</div>
+        <div class="nome-macchina">Panamera Turbo S</div>
+
+        <div class="specifiche">
+            <div class="specifica"><div class="valori-macchina">700</div><div class="spec-macchina">CV</div></div>
+            <div class="specifica"><div class="valori-macchina">3.2s</div><div class="spec-macchina">0-100 km/h</div></div>
+            <div class="specifica"><div class="valori-macchina">515</div><div class="spec-macchina">kW</div></div>
+            <div class="specifica"><div class="valori-macchina">315</div><div class="spec-macchina">km/h Max</div></div>
+            <div class="specifica"><div class="valori-macchina">Hybrid</div><div class="spec-macchina">Alimentaz.</div></div>
+            <div class="specifica"><div class="valori-macchina">2024</div><div class="spec-macchina">Anno</div></div>
+        </div>
+    </div>
+
+    <div class="footer-carta">
+        <div>
+            <div class="prezzo-macchina">€205.900</div>
+            <div class="iva">IVA inclusa</div>
+        </div>
+
+        <a href="macchine/panamera.php" class="btn-macchina">Configura →</a>
+    </div>
+</div>
+
+<!--6-->
+<div class="div-macchine">
+    <div class="div-macchine-img6">
+        <div class="tipo-macchina">SPORT</div>
+    </div>
+
+    <div class="info-macchine">
+        <div class="modello-macchina">718</div>
+        <div class="nome-macchina">718 Cayman GT4</div>
+
+        <div class="specifiche">
+            <div class="specifica"><div class="valori-macchina">500</div><div class="spec-macchina">CV</div></div>
+            <div class="specifica"><div class="valori-macchina">3.4s</div><div class="spec-macchina">0-100 km/h</div></div>
+            <div class="specifica"><div class="valori-macchina">368</div><div class="spec-macchina">kW</div></div>
+            <div class="specifica"><div class="valori-macchina">315</div><div class="spec-macchina">km/h Max</div></div>
+            <div class="specifica"><div class="valori-macchina">Benzina</div><div class="spec-macchina">Alimentaz.</div></div>
+            <div class="specifica"><div class="valori-macchina">2024</div><div class="spec-macchina">Anno</div></div>
+        </div>
+    </div>
+
+    <div class="footer-carta">
+        <div>
+            <div class="prezzo-macchina">€145.000</div>
+            <div class="iva">IVA inclusa</div>
+        </div>
+
+        <a href="macchine/cayman.php" class="btn-macchina">Configura →</a>
+    </div>
+</div>
+
+<!--7-->
+<div class="div-macchine">
+    <div class="div-macchine-img7">
+        <div class="tipo-macchina">HYBRID</div>
+    </div>
+
+    <div class="info-macchine">
+        <div class="modello-macchina">918</div>
+        <div class="nome-macchina">918 Spyder</div>
+
+        <div class="specifiche">
+            <div class="specifica"><div class="valori-macchina">887</div><div class="spec-macchina">CV</div></div>
+            <div class="specifica"><div class="valori-macchina">2.6s</div><div class="spec-macchina">0-100 km/h</div></div>
+            <div class="specifica"><div class="valori-macchina">652</div><div class="spec-macchina">kW</div></div>
+            <div class="specifica"><div class="valori-macchina">345</div><div class="spec-macchina">km/h Max</div></div>
+            <div class="specifica"><div class="valori-macchina">Hybrid</div><div class="spec-macchina">Alimentaz.</div></div>
+            <div class="specifica"><div class="valori-macchina">2024</div><div class="spec-macchina">Anno</div></div>
+        </div>
+    </div>
+
+    <div class="footer-carta">
+        <div>
+            <div class="prezzo-macchina">€950.000</div>
+            <div class="iva">IVA inclusa</div>
+        </div>
+
+        <a href="macchine/spyder.php" class="btn-macchina">Configura →</a>
+    </div>
+</div>
+
+<!--8-->
+<div class="div-macchine">
+    <div class="div-macchine-img8">
+        <div class="tipo-macchina">CONCEPT</div>
+    </div>
+
+    <div class="info-macchine">
+        <div class="modello-macchina">MISSION X</div>
+        <div class="nome-macchina">Mission X Hypercar</div>
+
+        <div class="specifiche">
+            <div class="specifica"><div class="valori-macchina">1000+</div><div class="spec-macchina">CV</div></div>
+            <div class="specifica"><div class="valori-macchina">2.0s</div><div class="spec-macchina">0-100 km/h</div></div>
+            <div class="specifica"><div class="valori-macchina">735</div><div class="spec-macchina">kW</div></div>
+            <div class="specifica"><div class="valori-macchina">350</div><div class="spec-macchina">km/h Max</div></div>
+            <div class="specifica"><div class="valori-macchina">Elettrica</div><div class="spec-macchina">Alimentaz.</div></div>
+            <div class="specifica"><div class="valori-macchina">2025</div><div class="spec-macchina">Anno</div></div>
+        </div>
+    </div>
+
+    <div class="footer-carta">
+        <div>
+            <div class="prezzo-macchina">€2.000.000</div>
+            <div class="iva">IVA inclusa</div>
+        </div>
+
+        <a href="macchine/mission.php" class="btn-macchina">Configura →</a>
+    </div>
+</div>
+
+</div>
+
+</div>
+  
 </body>
 
 </html>
