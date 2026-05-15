@@ -28,11 +28,11 @@ require_once "db/functions.php";
   </div>
   <div class="bottoni-modelli">
     <hr>
-    <button class="bottoni">TUTTI</button>
-    <button class="bottoni">BERLINA</button>
-    <button class="bottoni">SUV</button>
-    <button class="bottoni">SPORT</button>
-    <button class="bottoni">ELETTRICA</button>
+    <button class="bottoni" filtri="tutti">TUTTI</button>
+    <button class="bottoni" filtri="berlina">BERLINA</button>
+    <button class="bottoni" filtri="suv">SUV</button>
+    <button class="bottoni" filtri="sport">SPORT</button>
+    <button class="bottoni" filtri="elettrica">ELETTRICA</button>
     <hr>
   </div>
   <div class="grid-macchine">
@@ -40,7 +40,7 @@ require_once "db/functions.php";
   <div class="grid-macchine">
 
 <!--1-->
-<div class="div-macchine">
+<div class="div-macchine" categoria="elettrica">
     <div class="div-macchine-img">
         <div class="tipo-macchina">ELETTRICA</div>
     </div>
@@ -92,7 +92,7 @@ require_once "db/functions.php";
 </div>
 
 <!--2-->
-<div class="div-macchine">
+<div class="div-macchine" categoria="sport">
     <div class="div-macchine-img2">
         <div class="tipo-macchina">SPORT</div>
     </div>
@@ -145,7 +145,7 @@ require_once "db/functions.php";
 </div>
 
 <!--3-->
-<div class="div-macchine">
+<div class="div-macchine" categoria="suv">
     <div class="div-macchine-img3">
         <div class="tipo-macchina">SUV</div>
     </div>
@@ -198,7 +198,7 @@ require_once "db/functions.php";
 </div>
 
 <!--4-->
-<div class="div-macchine">
+<div class="div-macchine" categoria="suv">
     <div class="div-macchine-img4">
         <div class="tipo-macchina">SUV</div>
     </div>
@@ -228,7 +228,7 @@ require_once "db/functions.php";
 </div>
 
 <!--5-->
-<div class="div-macchine">
+<div class="div-macchine" categoria="berlina">
     <div class="div-macchine-img5">
         <div class="tipo-macchina">BERLINA</div>
     </div>
@@ -258,7 +258,7 @@ require_once "db/functions.php";
 </div>
 
 <!--6-->
-<div class="div-macchine">
+<div class="div-macchine" categoria="sport">
     <div class="div-macchine-img6">
         <div class="tipo-macchina">SPORT</div>
     </div>
@@ -288,7 +288,7 @@ require_once "db/functions.php";
 </div>
 
 <!--7-->
-<div class="div-macchine">
+<div class="div-macchine" categoria="hybrid">
     <div class="div-macchine-img7">
         <div class="tipo-macchina">HYBRID</div>
     </div>
@@ -318,7 +318,7 @@ require_once "db/functions.php";
 </div>
 
 <!--8-->
-<div class="div-macchine">
+<div class="div-macchine" categoria="elettrica">
     <div class="div-macchine-img8">
         <div class="tipo-macchina">CONCEPT</div>
     </div>
@@ -350,6 +350,37 @@ require_once "db/functions.php";
 </div>
 
 </div>
+
+<script>
+const buttons = document.querySelectorAll(".bottoni");
+const cards = document.querySelectorAll(".div-macchine");
+
+buttons.forEach(button => {
+
+    button.addEventListener("click", () => {
+
+        const filter = button.getAttribute("filtri");
+
+        cards.forEach(card => {
+
+            const category = card.getAttribute("categoria");
+
+            if (filter === "tutti") {
+                card.style.display = "flex";
+            } 
+            else if (category === filter) {
+                card.style.display = "flex";
+            } 
+            else {
+                card.style.display = "none";
+            }
+
+        });
+
+    });
+
+});
+</script>
   
 </body>
 
